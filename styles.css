@@ -3,9 +3,14 @@
   font-family: 'Roboto', sans-serif;
 }
 body {
-  max-width: 1920px;
+  padding-top: 50px;
+  max-width: 1200px;
   width: 100%;
   margin: 0 auto
+}
+
+h1 {
+  font-size: 48px;
 }
 
 .sectionContainer {
@@ -21,59 +26,44 @@ body {
   color: #000;
 }
 
+.sectionContainer .moreInfo {
+  text-decoration: underline;
+  text-align: start;
+}
+
 .imgContainer {
   position: relative;
   transition: filter .4s;
 }
 
+.imgContainer img {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 2px 2px 4px rgba(137, 137, 137, 0.25);
+  transform: scale(1);
+  transition: transform .2s;
+}
+
+.imgContainer img:hover {
+  transform: scale(1.02);
+}
+
 .imgContainer h2 {
-  position: absolute;
   font-size: 32px;
-  color: #fff;
-  left: 50%;
-  top: 50%;
-  text-align: center;
-  transform: translate(-50%, -50%);
-  opacity: 1;
-  transition : opacity .5s .5s;
 }
 
-.imgContainer:hover {
-  filter: grayscale(50%);
-}
-
-.imgContainer .bendium:after {
-  content: 'Bendium Immo';
-}
-.imgContainer:hover .bendium:after {
-  content: 'mehr Informationen';
-}
-
-.imgContainer .carRental:after {
-  content: 'Car Rental';
-}
-.imgContainer:hover .carRental:after {
-  content: 'mehr Informationen';
-}
-
-.imgContainer .treeHeight:after {
-  content: 'Tree Height';
-}
-.imgContainer:hover .treeHeight:after {
-  content: 'mehr Informationen';
-}
 
 .imgContainer .containerNr{
   position: absolute;
   left: -30;
   top: -30;
-  width: 80px;
+  width: auto;
   height: 80px;
   text-align: center;
   font-size: 64px;
-  border-radius: 50%;
+  border-radius: 16px;
   background-color:#fff;
-  box-shadow: 5px 5px 10px rgba(0,0,0,.5);
+  box-shadow: 2px 2px 4px rgba(137, 137, 137, 0.25);
   margin: 0;
 }
 
