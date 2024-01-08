@@ -1,5 +1,6 @@
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
 <header>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="../subPagestyles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
@@ -8,7 +9,7 @@
     <a href="../index.html">zurück</a>
     <h1>Tree Height</h1>
 
-    <img src="../src/TreeHeight-Teaser.png" alt="Übersicht der App TreeHeight">
+    <img src="../src/TreeHeight-Teaser.png" alt="Übersicht der App TreeHeight" class="dropShadow noZoom">
     <h2>Beschreibung</h2>
     <p>
         Bei TreeHeight handelt es sich um eine AR App für iOS. Die App wurde im Rahmen des Moduls InterFace Design an der Hochschule Furtwangen entwickelt.
@@ -36,35 +37,46 @@
     <ul>
         <li>Messen der Höhe von Bäumen im Wald</li>
         <li>Anzeigen der zuletzt gemessenene Höhe</li>
+        <a href="https://github.com/jmvogt0/IFD" target="_blank">GitHub Repository</a>
     </ul>
 
     <h3>Übersicht</h3>
-    <img src="../src/TreeHeight-Screens.jpg" alt="" class="dropShadow">
+    <img src="../src/TreeHeight-Screens.jpg" alt="" class="dropShadow noZoom">
     <p>
         
     </p>
 
     <h3>Messen eines Baumes</h3>
-    <img src="../src/TreeHeight-Messen.jpg" alt="" class="dropShadow">
+    <img src="../src/TreeHeight-Messen.jpg" alt="" class="dropShadow noZoom">
     <p>
         Das Messen eines Baumes besteht aus zwei Schritten: Zuerst wird der Stamm des Baumes markiert. Anschließend dann der Winkel zur Spitze des Baumes um die Höhe zu berechnen.
         Durch die Markierung der Punkte entsteht eine virtuelles Dreieck, wodurch die Höhe des Baumes errechnet werden kann.
     </p>
 
-    <h3>Code</h3>
-    <img src="../src/TreeHeight-Code.png" alt="">
-    <p>
-        Hier ein Ausschnitt aus xCode von der Startseite der App. Im Code ersichtlich ist die Verwendung von SwiftUI und im unteren Bereich dann der Aufruf der AR View.
-    </p>
-
-    <h3>
-        AR Code
-    </h3>
-    <img src="../src/TreeHeight-ARCode.png" alt="">
-    <p>
-        Zusätzlich zu dem Code aus SwiftUI ist hier noch der Code aus der AR View zu sehen. Im oberen Bereich wird die AR View initialisiert und im unteren Bereich sind Funktionen zur Berechnung der Distanz aber 
-        auch zur Markierung der Punkte zu sehen.
-        Weitere Informationen lassen sich dem GitHub Repository entnehmen:
-    </p>
-    <a href="https://github.com/jmvogt0/IFD" target="_blank">GitHub Repository</a>
+    <div class="descriptionGalery">
+        <div class="galeryElement">
+            <h3>Code</h3>
+            <input type="checkbox" id="img1">
+            <label for="img1">
+                <img src="../src/TreeHeight-Code.png" alt="">
+            </label>
+            <p>
+                Hier ein Ausschnitt aus xCode von der Startseite der App. Im Code ersichtlich ist die Verwendung von SwiftUI und im unteren Bereich dann der Aufruf der AR View.
+            </p>
+        </div>
+        <div class="galeryElement">
+            <h3>
+                AR Code
+            </h3>
+            <input type="checkbox" id="img2">
+            <label for="img2">
+                <img src="../src/TreeHeight-ARCode.png" alt="">
+            </label>
+            <p>
+                Zusätzlich zu dem Code aus SwiftUI ist hier noch der Code aus der AR View zu sehen. Im oberen Bereich wird die AR View initialisiert und im unteren Bereich sind Funktionen zur Berechnung der Distanz aber 
+                auch zur Markierung der Punkte zu sehen.
+                Weitere Informationen lassen sich dem GitHub Repository entnehmen:
+            </p>
+        </div>
+    </div>
 </body>

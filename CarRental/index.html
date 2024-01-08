@@ -1,6 +1,7 @@
 <html lang="de">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
 <header>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="../subPagestyles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
@@ -35,29 +36,47 @@
         <li>Anlegen von Autos</li>
         <li>mieten von Autos</li>
         <li>vermieten von Autos</li>
+        <a href="https://github.com/jmvogt0/CarRental" target="_blank">zum GitHub Repository</a>
     </ul>
 
-    <h3>Übersicht</h3>
-    <img src="../src/CarRental-List.png" alt="" class="dropShadow">
-
-    <h3>Detailansicht</h3>
-    <img src="../src/CarRental-Rent.png" alt="" class="dropShadow">
-
-    <h3>Historie</h3>
-    <img src="../src/CarRental-History.png" alt="" class="dropShadow">
-    <p>
-        Hier werden alle in der Vergangenheit getätigten Mietvorgänge angezeigt. Ebenfalls auch wann das Auto gemierer
-        wurde.
-    </p>
-
-    <h3>Code</h3>
-    <img src="../src/CarRental-Code.png" alt="">
-    <p>
-        Beispielhaft hier die Darstellung der CarDetail Komponente und auf der linken Seite ein Überblick über die
-        gesamt in der Anwendung verwendeten Komponenten.
-    </p>
-
-    <a href="https://github.com/jmvogt0/CarRental" target="_blank">zum GitHub Repository</a>
+    <div class="descriptionGalery">
+        <div class="galeryElement">
+            <h3>Übersicht</h3>
+            <input type="checkbox" id="img1">
+            <label for="img1">
+                <img src="../src/CarRental-List.png" alt="" class="dropShadow">
+            </label>
+        </div>
+        <div class="galeryElement">
+            <h3>Detailansicht</h3>
+            <input type="checkbox" id="img2">
+            <label for="img2">
+                <img src="../src/CarRental-Rent.png" alt="" class="dropShadow">
+            </label>
+        </div>
+        <div class="galeryElement">
+            <h3>Historie</h3>
+            <input type="checkbox" id="img3">
+            <label for="img3">
+                <img src="../src/CarRental-History.png" alt="" class="dropShadow">
+            </label>
+            <p>
+                Hier werden alle in der Vergangenheit getätigten Mietvorgänge angezeigt. Ebenfalls auch wann das Auto gemierer
+                wurde.
+            </p>
+        </div>
+        <div class="galeryElement">
+            <h3>Code</h3>
+            <input type="checkbox" id="img4">
+            <label for="img4">
+                <img src="../src/CarRental-Code.png" alt="">
+            </label>
+            <p>
+                Beispielhaft hier die Darstellung der CarDetail Komponente und auf der linken Seite ein Überblick über die
+                gesamt in der Anwendung verwendeten Komponenten.
+            </p>
+        </div>
+    </div>
 </body>
 
 </html>

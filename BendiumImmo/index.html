@@ -1,6 +1,7 @@
 <html lang="de">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
 <header>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="../subPagestyles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
@@ -11,7 +12,7 @@
     <a href="../index.html">zurück</a>
     <h1>Bendium Immo</h1>
 
-    <img src="../src/Bendium-PropertyList.png" alt="Übersicht der Anwendung Bendium Immo" class="dropShadow">
+    <img src="../src/Bendium-PropertyList.png" alt="Übersicht der Anwendung Bendium Immo" class="dropShadow noZoom">
     <h2>Beschreibung</h2>
     <p>
         Das Projekt Immo Bendium wurde von Prof. Dirk Benyoucef initiiert. Ziel des Projektes ist es, eine
@@ -30,6 +31,9 @@
         <li>Laravel</li>
         <li>Vue3</li>
         <li>MySQL</li>
+        <li>PHP</li>
+        <li>JavaScript</li>
+        <li>Inertia</li>
     </ul>
 
     <h2>Tätigkeiten</h2>
@@ -53,76 +57,126 @@
         im Kontext der Immobilien erstellen und verwalten können.
     </p>
 
-    <h3>Übersicht der Module</h3>
-    <img src="../src/Bendium-Uebersicht.jpg" alt="Übersicht der Module von Bendium Immo" class="dropShadow">
-    <p>
-        Die Anwendung ist in verschiedene Module unterteilt. Als Basis der gesamten Anwendung dient das Modul
-        Stammdaten, in welchem die
-        Liegenschaften, Gebäude und Einheiten verwaltet werden. Von mir bearbeitet wurden vor allem die Module,
-        Stammdaten, ToDo, Verträge und Mieter.
-    </p>
-
-    <h3>Datenbank</h3>
-    <img src="../src/Bendium-DB.png" alt="Bild der Bendium Immo Datenbank" class="dropShadow">
-    <p>
-        Im Rahmen der Bearbeitung des Projektes wurde die Datenbank im Bereich der ToDo und der Verträge erweitert sowie
-        in den Stammdaten als auch Personen überarbeitet.
-        Zusätzlich wurden Seeder als auch Factories zum Erstellen von Dummy-Daten geschrieben.
-    </p>
-
-
-    <h3>Property List</h3>
-    <img class="dropShadow" src="../src/Bendium-PropertyList.png" alt="Bild der Bendium Immo Property List Seite">
-    <p>
-        Beispielhaft für eine List-View ist hier die Property-List zu sehen, also die Übersichtsseite der
-        Liegenschaften.
-        Auf dieser Seite gibt es die Möglichkeiten, neue Liegenschaften zu erstellen, zu den Detailseiten zu gelangen
-        als auch zu den Seiten der Gebäude zu gelangen.
-        Darüberhinaus können Liegenschaften gesucht werden, nach Kriterien gefiltert und die Reihen folge sortiert.
-    </p>
-
-    <h3>Property Show</h3>
-    <img class="dropShadow" src="../src/Bendium-PropertyShow.png" alt="Bild der Bendium Immo Property Show Seite">
-    <p>
-        Auf den Show Seiten werden eine Vielzahl an Informationen angezeigt. Zum Beispiel werden bei Liegenschaften die
-        verschiedenen Adressen angezeigt,
-        eine Chronologie aller in der Vergangenheit durchgeführten Reparaturen aber auch Wirtschaftliche Daten wie der
-        Verlauf der Einnahmen durch Miete.
-    </p>
-
-    <h3>Contract List</h3>
-    <img class="dropShadow" src="../src/Bendium-ContractList.png" alt="Bild der Bendium Immo Contract List Seite">
-    <p>
-        Durch den Einsatz von Vue3 war es möglich eine Component Library einzuführen. So verwenden alle List Views die
-        selbe Komponente zum Anzeigen der Elemente,
-        was den Anpassungsaufwand reduzierte als auch die einheitlichkeit der Anwendung erhöhte.
-    </p>
-
-    <img src="../src/Bendium-ListCard.png" alt="" class="dropShadow">
-    <p>
-        Hier zu sehen ist die Komponente, welche in den List Views verwendet wird. Im oberen Teil ist zu erkennen, wie
-        auf unterschiedliche Daten reagiert wird und dann
-        zum Beispiel ein Bild oder ein Icon angezeigt wird.
-    </p>
-
-
-    <h3>Contract Edit</h3>
-    <img src="../src/Bendium-ContractEdit.png" alt="Bild der Bendium Immo Vertrags Edit Seite" class="dropShadow">
-    <p>
-        Um die Daten zu bearbeiten wurden Formulare angelegt. Beim Bearbeiten von Informationen wird dieses bereits
-        vorausgefüllt, sodass Daten nicht erneut eingegeben werden müssen.
-        Ebenfalls wurde auch hier darauf geachtet, Komponenten zu verwenden, die in der gesamten Anwendung verwendet
-        werden.
-    </p>
-
-    <h3>Storybook</h3>
-    <img src="../src/Bendium-Storybook.png" alt="" class="dropShadow">
-    <p>
-        Um jederzeit den Überblick über die Komponenten als auch andere Entscheidungen zu behalten wurde Storybook
-        eingeführt.
-        Hier lässt sich jede Komponente in allen möglichen Zuständen anzeigen und testen.
-        Zusätzlich wird so auch sichergestellt, dass Wissen nicht verloren geht, sondern jederzeit nachvollzogen werden kann.
-    </p>
+    <div class="descriptionGalery">
+        <div class="galeryElement">
+            <h3>Übersicht der Module</h3>
+            <input type="checkbox" id="img1">
+            <label for="img1">
+                <img src="../src/Bendium-Uebersicht.jpg" alt="Übersicht der Module von Bendium Immo" class="dropShadow">
+            </label>
+            <p>
+                Die Anwendung ist in verschiedene Module unterteilt. Als Basis der gesamten Anwendung dient das Modul
+                Stammdaten, in welchem die
+                Liegenschaften, Gebäude und Einheiten verwaltet werden. Von mir bearbeitet wurden vor allem die Module,
+                Stammdaten, ToDo, Verträge und Mieter.
+            </p>
+        </div>
+        <div class="galeryElement">
+            <h3>Datenbank</h3>
+            <input type="checkbox" id="img2">
+            <label for="img2">
+                <img src="../src/Bendium-DB.png" alt="Bild der Bendium Immo Datenbank" class="dropShadow">
+            </label>
+            <p>
+                Im Rahmen der Bearbeitung des Projektes wurde die Datenbank im Bereich der ToDo und der Verträge
+                erweitert sowie
+                in den Stammdaten als auch Personen überarbeitet.
+                Zusätzlich wurden Seeder als auch Factories zum Erstellen von Dummy-Daten geschrieben.
+            </p>
+        </div>
+        <div class="galeryElement">
+            <h3>Property List</h3>
+            <input type="checkbox" id="img3">
+            <label for="img3">
+                <img class="dropShadow" src="../src/Bendium-PropertyList.png"
+                alt="Bild der Bendium Immo Property List Seite">
+            </label>
+            <p>
+                Beispielhaft für eine List-View ist hier die Property-List zu sehen, also die Übersichtsseite der
+                Liegenschaften.
+                Auf dieser Seite gibt es die Möglichkeiten, neue Liegenschaften zu erstellen, zu den Detailseiten zu
+                gelangen
+                als auch zu den Seiten der Gebäude zu gelangen.
+                Darüberhinaus können Liegenschaften gesucht werden, nach Kriterien gefiltert und die Reihen folge
+                sortiert.
+            </p>
+        </div>
+        <div class="galeryElement">
+            <h3>Property Show</h3>
+            <input type="checkbox" id="img4">
+            <label for="img4">
+                <img class="dropShadow" src="../src/Bendium-PropertyShow.png"
+                alt="Bild der Bendium Immo Property Show Seite">
+            </label>
+            <p>
+                Auf den Show Seiten werden eine Vielzahl an Informationen angezeigt. Zum Beispiel werden bei
+                Liegenschaften die
+                verschiedenen Adressen angezeigt,
+                eine Chronologie aller in der Vergangenheit durchgeführten Reparaturen aber auch Wirtschaftliche Daten
+                wie der
+                Verlauf der Einnahmen durch Miete.
+            </p>
+        </div>
+        <div class="galeryElement">
+            <h3>Contract List</h3>
+            <input type="checkbox" id="img5">
+            <label for="img5">
+                <img class="dropShadow" src="../src/Bendium-ContractList.png"
+                alt="Bild der Bendium Immo Contract List Seite">
+            </label>
+            <p>
+                Durch den Einsatz von Vue3 war es möglich eine Component Library einzuführen. So verwenden alle List
+                Views die
+                selbe Komponente zum Anzeigen der Elemente,
+                was den Anpassungsaufwand reduzierte als auch die einheitlichkeit der Anwendung erhöhte.
+            </p>
+        </div>
+        <div class="galeryElement">
+            <h3>ListCard</h3>
+            <input type="checkbox" id="img6">
+            <label for="img6">
+                <img src="../src/Bendium-ListCard.png" alt="" class="dropShadow">
+            </label>
+            
+            <p>
+                Hier zu sehen ist die Komponente, welche in den List Views verwendet wird. Im oberen Teil ist zu
+                erkennen, wie
+                auf unterschiedliche Daten reagiert wird und dann
+                zum Beispiel ein Bild oder ein Icon angezeigt wird.
+            </p>
+        </div>
+        <div class="galeryElement">
+            <h3>Contract Edit</h3>
+            <input type="checkbox" id="img7">
+            <label for="img7">
+                <img src="../src/Bendium-ContractEdit.png" alt="Bild der Bendium Immo Vertrags Edit Seite"
+                class="dropShadow">
+            </label>
+            <p>
+                Um die Daten zu bearbeiten wurden Formulare angelegt. Beim Bearbeiten von Informationen wird dieses
+                bereits
+                vorausgefüllt, sodass Daten nicht erneut eingegeben werden müssen.
+                Ebenfalls wurde auch hier darauf geachtet, Komponenten zu verwenden, die in der gesamten Anwendung
+                verwendet
+                werden.
+            </p>
+        </div>
+        <div class="galeryElement">
+            <h3>Storybook</h3>
+            <input type="checkbox" id="img8">
+            <label for="img8">
+                <img src="../src/Bendium-Storybook.png" alt="" class="dropShadow">
+            </label>
+            <p>
+                Um jederzeit den Überblick über die Komponenten als auch andere Entscheidungen zu behalten wurde
+                Storybook
+                eingeführt.
+                Hier lässt sich jede Komponente in allen möglichen Zuständen anzeigen und testen.
+                Zusätzlich wird so auch sichergestellt, dass Wissen nicht verloren geht, sondern jederzeit nachvollzogen
+                werden kann.
+            </p>
+        </div>
+    </div>
 </body>
 
 </html>
