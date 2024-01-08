@@ -1,6 +1,6 @@
 * {
   box-sizing: border-box;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 body {
   padding-top: 50px;
@@ -12,7 +12,11 @@ body {
 h1 {
   font-size: 48px;
 }
-
+.pageHead {
+  width: 650px;
+  margin: 0 auto;
+  margin-bottom: 56px;
+}
 .sectionContainer {
   display: flex;
   flex-direction: column;
@@ -24,6 +28,16 @@ h1 {
 .sectionContainer a {
   text-decoration: none;
   color: #000;
+  display: flex;
+  justify-content: center;
+}
+
+.textContainer {
+  width: calc(50% - 40px);
+  margin-left: 40px;
+}
+.textContainer h2 {
+  margin-top: 0;
 }
 
 .sectionContainer .moreInfo {
@@ -34,6 +48,7 @@ h1 {
 .imgContainer {
   position: relative;
   transition: filter .4s;
+  width: 40%;
 }
 
 .imgContainer img {
@@ -69,4 +84,30 @@ h1 {
 
 .imgContainer img {
   max-width: 1200px;
+}
+
+.lebenslauf {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.lebenslauf .row{
+  display: flex;
+  margin-bottom: 24px;
+}
+.lebenslauf .row{
+  width: 650px;
+}
+.lebenslauf h2, h3 {
+  width: 650px;
+}
+
+.lebenslauf .row .time {
+  width: 250px;
+}
+
+.lebenslauf .row .work {
+  margin-left: 20px;
+  width: 400px;
 }
