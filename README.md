@@ -1,1 +1,1 @@
-# Portfolio-Offenburg
+# Portfolio zur Bewerbung an der Hochschule Offenburg
