@@ -6,7 +6,8 @@ body {
     padding-top: 50px;
     max-width: 1200px;
     width: 100%;
-    margin: 0 auto
+    margin: 0 auto;
+    padding-bottom: 200px;
 }
 
 h3 {
@@ -35,6 +36,7 @@ input[type=checkbox] {
 
 input[type=checkbox]:checked ~ label > img {
     transform: scale(2);
+    box-shadow: none;
     cursor: zoom-out;
   }
 
